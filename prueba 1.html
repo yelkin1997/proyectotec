@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mundo Digit@l</title> 
+</head>
+<body>
+    <header>    
+    <h1>Mundo Digit@l</h1>
+    <h2>La tecnologia al alcance de sus manos. Sean bienvenidos</h2>
+
+    <img id="Logo" src="img/logo.jpg" alt="Logo de la página" width="150" height="150">
+    <br>
+    <img id="Banner" src="img/banner.jpeg" alt="banner" width="1000" height="200">
+    </header>
+
+        <nav>
+        <a href="#Intro">Intro</a> |
+        <a href="#Noti">Noticias</a> |
+        <a href="#Formulario">Sugerencias</a> |
+        <a href="#Links">Contacto</a> |
+        <a href="https://youtube.com/@mundodigitaltecnology?si=fSfuGIQaiGS7cQ93">Youtube</a>
+      </nav>
+    
+
+    <!--Descripcion-->
+    <section id="Intro">
+          <h1>Introduccion</h1>
+    <p>Bienvenidos a Mundo digit@l! Una web donde recibirás información y guias sobre diversos temas relacionados con software, apps y utilidades del plano virtual. </p>
+    <p>Te invitamos a revisar nuestro contenido y a darnos tu humilde opinion para asi seguir mejorando nuestra experiencia.</p>
+    <p>Nuestro contenido va desde tutoriales sobre trucos y software, hasta comprobaciones y calificaciones sobre distintos temas relacionados con el ambito digital.</p>
+    </section>
+
+    <section id="Noti">
+            <h1>Ultimas noticias:</h1>
+
+        <article id="clipc">
+                <h2>Analisis de Clipclaps: Una absoluta decepción</h2>
+                <br>
+                <img id="noticia" src="img/noticia1.jpg" alt="noticia" width="300" height="200">
+
+                <p>La revision de la aplicacion "Clipclaps" fue realizado y tristemente el resultado fue lamentable. entre los detalles a destacar se tienen:</p>
+
+ 
+                <h3>Fallos</h3>
+                <ul>
+                    <li>Poca seguridad</li>
+                    <li>Tiempos tardados para cumplir metas</li>
+                    <li>Eventos de ganancia engañosos</li>
+                    <li>Pagos directamente inexistentes</li>
+                </ul>
+
+                <p>No se recomienda usar la aplicacion. si deseas mas detalles puedes ver el video informe aqui:</p>
+                <p><a id="clip" href="https://youtu.be/tuLG-ZoacWk?si=tQVhpjdsc8vAN2Pr" target="_blank">Informe clipclaps</a></p>
+                    </article>
+
+        <article id="extension">
+                <h2>Extensiones de navegador que te pueden servir en tu dia a dia!</h2>
+                <br>
+                <img id="naveg" src="img/naveg.jpg" alt="navegador" width="300" height="200">
+                <br>
+                <p>Las extensiones de navegador, son una serie de complementos que nos permiten mejorar la experiencia de uso de nuestros navegadores agregando y/o mejorando caracteristicas a nuestros navegadores, permitiendo capacidades mejoradas y acordes con nuestras necesidades
+                </p>
+                <p>Hemos recopilado para su provecho, una pequeña lista de extensiones que seguramente les serán utiles en el dia a dia, y que incluso pueden garantizar una experiencia de navegacion mas segura a la hora de acceder a la basta red de internet.</p>
+                <br>
+                <h3>Extensiones que pueden servirte:</h3>
+                <ul>
+                    <li>Urban VPN: Conexion segura a traves de internet</li>
+                    <li>Browser Guard: Un guardián que nos protegerá de lso peligros de la red</li>
+                    <li>Dark reader: Modo oscuro personalizable para tu navegador</li>
+                    <li>Shazam: Reconoce la musica que estes escuchando con un click</li>
+                    <li>Guardar imagen como: Guarda imagenes con el formato que desees</li>
+                    <li>Nimble capture: Capturador de imagenes y video con caracteristicas extra</li>
+                </ul>
+                <br>
+                <p>Puedes ver una descripcion mas precisa de las extensiones en nuestro video en YouTube:</p>
+                <p><a id="ext" href="https://youtu.be/COAYCF0UQyw?si=t9DyxKsvYTd2dkex" target="_blank">Extensiones para ti</a> </p>
+        </article>
+
+    </section>
+    
+    <section id="contact">
+  <form id="Formulario" action="" method="post">
+    <fieldset>
+    <legend>Buzon de contacto y sugerencias</legend>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" placeholder="Nombre completo" id="nombre" name="nombre" required>
+    <br><br>
+    
+    <label for="correo">Correo Electrónico:</label>
+    <input type="email" placeholder="ejemplo@123.com" id="correo" name="correo" required>
+    <br><br>
+   
+    <label for="motivo">Motivo de Contacto:</label>
+    <select id="motivo" name="motivo" required>
+      <option value="">Seleccione una opción</option>
+      <option value="consulta">Información</option>
+      <option value="soporte">Reportar contenido</option>
+      <option value="sugerencia">Sugerencia</option>
+    </select>
+    <br><br>
+    
+    <label for="mensaje">Mensaje:</label><br>
+    <textarea id="mensaje" name="mensaje" rows="5" cols="40" required></textarea>
+    <br><br>
+    
+    <button type="submit">Enviar</button>
+    </fieldset>
+  </form>
+  
+  </section>
+
+    <aside id="Links">    
+        <p>Gracias por ver, no olvide que puedes seguirnos en nuestras redes sociales!<a href="mailto:mundodigitalpcs@gmail.com">mundodigitalpcs@gmail.com</a>.</p>
+        <h3>Toda opinion será bien recibida</h3>
+    <p>
+        <a id="yout" href="https://youtube.com/@mundodigitaltecnology?si=fSfuGIQaiGS7cQ93" target="_blank">Canal de Youtube</a> | 
+        <a id="face" href="https://facebook.com/digit4lworld" target="_blank">Facebook</a>
+    </p></aside>
+    <script src="script.js" defer></script>
+
+</body>
+</html>
