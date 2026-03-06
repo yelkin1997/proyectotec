@@ -70,12 +70,29 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const nombre = document.getElementById("nombre").value.trim();
         const correo = document.getElementById("correo").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const motivo = document.getElementById("motivo").value;
         const mensaje = document.getElementById("mensaje").value.trim();
 
-        if (nombre === "" || correo === "" || mensaje === "") {
-            alert("Por favor complete todos los campos.");
-            return;
+        // Expresiones regulares
+        const revCorreo = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const revTelefono = /^[0-9]{10}$/;
+
+        if (nombre === "" || correo === "" || telefono === "" || motivo === "" || mensaje === "") {
+        alert("Por favor complete todos los campos.");
+        return;
         }
+
+        if (!revCorreo.test(correo)) {
+        alert("Ingrese un correo electrónico válido.");
+        eturn;
+        }
+
+        if (!revTelefono.test(telefono)) {
+        alert("Ingrese un número de teléfono válido (10 dígitos).");
+        return;
+        }
+
 
         alert("Gracias por tu mensaje, " + nombre + ". Te responderemos pronto.");
 
