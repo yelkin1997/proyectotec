@@ -184,3 +184,29 @@ aside h3 {
   color: #006699;
   margin-bottom: 10px;
 }
+ 
+ 
+  /* personalizacion zona csv */
+
+#csvSection{
+  background:#eef7ff;
+  padding:20px;
+  margin:20px;
+  border:2px solid #006699;
+  border-radius:10px;
+}
+
+#tablaCSV table{
+  border-collapse:collapse;
+  margin-top:15px;
+}
+
+#tablaCSV th, #tablaCSV td{
+  border:1px solid #999;
+  padding:8px;
+}
+
+#tablaCSV th{
+  background:#006699;
+  color:white;
+}
