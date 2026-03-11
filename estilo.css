@@ -216,3 +216,17 @@ aside h3 {
   background:#006699;
   color:white;
 }
+
+/*Div contenedor de la tabla visualizacion csv*/
+.contenedor-tabla{
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+/*Dejar fijo el encabezado de la tabla csv*/
+thead th{
+  position: sticky;
+  top: 0;
+  background-color: #3498db;
+  color: white;
+}
