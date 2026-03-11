@@ -15,8 +15,9 @@ botonCargar.addEventListener("click", function(){
     const lector = new FileReader();
     lector.onload = function(e){
         const contenido = e.target.result;
-        const filas = contenido.split("\n").slice(0,11);
-        let tabla = "<table>";
+        //const filas = contenido.split("\n").slice(0,11);
+        const filas = contenido.split("\n");
+        let tabla = "<div class='contenedor-tabla'><table>";
         filas.forEach((fila,i)=>{
             const columnas = fila.split(",");
             tabla += "<tr>";
@@ -29,7 +30,7 @@ botonCargar.addEventListener("click", function(){
             });
             tabla += "</tr>";
         });
-        tabla += "</table>";
+        tabla += "</table></div>";
         tablaCSV.innerHTML = tabla;
     };
     lector.readAsText(archivo);
