@@ -15,22 +15,31 @@ botonCargar.addEventListener("click", function(){
     const lector = new FileReader();
     lector.onload = function(e){
         const contenido = e.target.result;
-        //const filas = contenido.split("\n").slice(0,11);
-        const filas = contenido.split("\n");
+        const separador = contenido.includes(";") ? ";" : ",";
+        const filas = contenido
+            .split("\n")
+            .map(fila => fila.trim())
+            .filter(fila => fila !== "")
+            .map(fila => fila.split(separador));
         let tabla = "<div class='contenedor-tabla'><table>";
-        filas.forEach((fila,i)=>{
-            const columnas = fila.split(",");
+
+        //Encabezado
+        tabla += "<thead><tr>";
+        filas[0].forEach(columna => {
+            tabla += "<th>" + columna + "</th>";
+        });
+        tabla += "</tr></thead>";
+        
+        // cuerpo
+        tabla += "<tbody>";
+        for (let i = 1; i < filas.length; i++) {
             tabla += "<tr>";
-            columnas.forEach(col=>{
-                if(i===0){
-                    tabla += `<th>${col}</th>`;
-                }else{
-                    tabla += `<td>${col}</td>`;
-                }
+            filas[i].forEach(celda => {
+                tabla += "<td>" + celda + "</td>";
             });
             tabla += "</tr>";
-        });
-        tabla += "</table></div>";
+        }
+        tabla += "</tbody></table></div>";
         tablaCSV.innerHTML = tabla;
     };
     lector.readAsText(archivo);
