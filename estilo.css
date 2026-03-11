@@ -66,6 +66,12 @@ nav a:hover {
   color: yellow;
 }
 
+.inpage{
+  background-color: #004466;
+  border: 2px solid gray;
+  color: gray;
+}
+
 /* Secciones */
 section {
   padding: 20px;

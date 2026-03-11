@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Energia Eolica</title>
+
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <img id="Banner" src="img/banner.jpeg" alt="banner" width="1000" height="200">
+        <h1>Energia eolica</h1>
+        <h2>Una guía, por un camino limpio y un futuro sostenible</h2>
+    </header>
+    <nav>
+        <a href="prueba 1.html">Intro</a> |
+        <a href="">Noticias</a> |
+        <a href="">Sugerencias</a> |
+        <a href="">Contacto</a> |
+        <a class="inpage" href="#">Dashboard</a>
+    </nav>
+    
+    <section id="csvSection">
+        <h1>Cargar archivo CSV</h1>
+        
+        <input type="file" id="csv1" accept=".csv">
+        <button id="cargarCSV">Cargar CSV</button>
+        <button id="eliminarCSV">Eliminar archivo</button>
+        
+        <h2>Vista previa (primeros 10 registros)</h2>
+        <div id="tablaCSV"></div>
+    </section>
+
+    <aside id="Links">
+        <p>Gracias por ver, no olvide que puedes seguirnos en nuestras redes sociales!<a href="mailto:mundodigitalpcs@gmail.com">mundodigitalpcs@gmail.com</a>.</p>
+        <h3>Toda opinion será bien recibida</h3>
+        <p>
+            <a id="yout" href="https://youtube.com/@mundodigitaltecnology?si=fSfuGIQaiGS7cQ93" target="_blank">Canal de Youtube</a> |
+            <a id="face" href="https://facebook.com/digit4lworld" target="_blank">Facebook</a>
+        </p>
+    </aside>
+    
+    <script src="read_csv.js" defer></script>
+</body>
+</html>
