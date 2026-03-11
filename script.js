@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Cambiar título principal
 
     const titulo = document.querySelector("header h1");
-    titulo.textContent = "Mundo Digital Interactivo 🚀";
+    titulo.textContent = "Energía eolica. La fuerza del viento impulsando el futuro 🚀";
 
 
 
