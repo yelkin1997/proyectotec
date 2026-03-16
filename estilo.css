@@ -132,6 +132,9 @@ p {
 }
 
 /* Noticias con Grid */
+#Noti h1{
+  grid-column: 1 / -1;
+}
 section#Noti {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -310,7 +313,7 @@ footer a:hover{
   color:yellow;
 }
 
-/*modo oscuro */
+/*Boton subida */
 #btnArriba{
   position:fixed;
   bottom:30px;
@@ -329,12 +332,12 @@ footer a:hover{
 #btnArriba:hover{
   background:#004466;
 }
-
+ /* proyecto modo oscuro
 @media (prefers-color-scheme: dark){
 
   body{
     background:#1b1b1b;
-    color:#eee;
+    color:#636d89;
   }
 
   section{
