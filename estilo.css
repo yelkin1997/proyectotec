@@ -36,11 +36,11 @@ header h2 {
 }
 
 #Banner{
-  grid-column: 1 / span 2;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  display: block;
+  width:100%;
+  max-height:400px;
+  object-fit:cover;
+  margin:0;
+  display:block;
 }
 
 /* Navegación con Flexbox */
