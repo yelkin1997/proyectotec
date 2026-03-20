@@ -38,10 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
     new Chart(ctx2, {
         type: "pie",
         data: {
-            labels: ["Eólica", "Solar", "Hidráulica"],
+            labels: ["Eólica", "Solar", "Hidráulica", "Otros" ],
             datasets: [{
                 label: "Producción energética",
-                data: [70, 50, 90],
+                data: [59852246, 31732163, 59858196, 28208168],
                 borderWidth: 1
             }]
         },
