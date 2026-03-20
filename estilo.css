@@ -332,6 +332,24 @@ footer a:hover{
 #btnArriba:hover{
   background:#004466;
 }
+
+#graficos {
+  background: #eef7ff;  
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  border: 2px solid #006699;
+  border-radius: 10px;
+}
+
+#graficos canvas {
+  width: 100% !important;
+  height: 500px !important;
+  max-width: 800px;
+  margin: 20px auto;
+  display: block;
+}
+
  /* proyecto modo oscuro
 @media (prefers-color-scheme: dark){
 
