@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Mensaje de bienvenida
 
-    alert("Bienvenido a Mundo Digital");
+    alert("Bienvenido a un mundo de energia limpia!");
 
 
     //  Cambiar color del header al hacer clic
