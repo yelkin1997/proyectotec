@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!revCorreo.test(correo)) {
         alert("Ingrese un correo electrónico válido.");
-        eturn;
+        return;
         }
 
         if (!revTelefono.test(telefono)) {
