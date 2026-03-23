@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-    // 📊 GRAFICO 1: ENERGIA EOLICA COLOMBIA
+    //  GRAFICO 1: ENERGIA EOLICA COLOMBIA
     const ctx1 = document.getElementById("graficoEolico").getContext("2d");
 
     new Chart(ctx1, {
@@ -17,11 +17,13 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         options: {
             responsive: true,
-            plugins: {
-                legend: {
-                    display: true
-                }
-            }
+            scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+            
+           
         },
         
         
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    // 📊 GRAFICO 2 (EJEMPLO)
+    //  GRAFICO 2 
     const ctx2 = document.getElementById("grafico2").getContext("2d");
 
     new Chart(ctx2, {

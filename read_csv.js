@@ -16,14 +16,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             let tabla = "<div class='contenedor-tabla'><table>";
 
-            // 🔹 Encabezado
+            //  Encabezado
             tabla += "<thead><tr>";
             filas[0].forEach(col => {
                 tabla += "<th>" + col + "</th>";
             });
             tabla += "</tr></thead>";
 
-            // 🔹 Mostrar TODOS los datos
+            //  Mostrar TODOS los datos
             tabla += "<tbody>";
             for (let i = 1; i < filas.length; i++) {
                 tabla += "<tr>";
