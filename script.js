@@ -102,9 +102,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// Boton subida config
-
-
-
 
 });
