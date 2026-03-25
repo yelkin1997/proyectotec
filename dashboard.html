@@ -22,6 +22,15 @@
         <a class="inpage" href="#">Dashboard</a>
     </nav>
     
+    <section id="calculadoraEnergia">
+
+        <h1>Calculadora de Consumo Energético</h1>
+        <p>Ingrese su consumo mensual en kWh para calcular su equivalencia energética.</p>
+        <input type="number" id="kwh" placeholder="Ej: 250">
+        <button onclick="resultado()">Calcular</button>
+
+    </section>
+
     <section id="csvSection">
 
     
@@ -39,12 +48,16 @@
     <canvas id="grafico2"></canvas>
     </section>
 
-    <!-- Chart.js -->
+    <!-- llamado de scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
 
     <!-- Script de gráficos -->
     <script src="charts.js"></script>
+
+    <!-- script de calculadora-->
+    <script src="calculadora.js"></script>
 
     <aside id="Links">
         <p>Gracias por su atencion. Cualquier sugerencia, Esperamos que esta informacion resulte útil y adecuada para todos.</a>.</p>

@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
             datasets: [{
                 label: "Consumo (TW)",
-                data: [5485471, 57624802, 702303, 6837745, 50887343, 3071419, 4344, 6332, 1012, 59852246],
+                data: [548547, 57624, 702303, 68377, 50887, 30714, 4344, 6332, 1012, 59852],
                 borderWidth: 3,
                 tension: 0.4,
                 fill: false

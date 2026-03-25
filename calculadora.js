@@ -2,9 +2,9 @@ function resultado(){
     const valor = document.getElementById("kwh").value;
     const cov= parseFloat(valor)
     const twh= convierte_twh(cov)
-    const porcent=58.19
+    const porcent=1012
     const porcentaje= ((twh*100)/porcent).toFixed(4)
-    const res="Su consumo promedio mensual fue de "+valor+"kwh, lo cual es quivalente al "+ porcentaje+"% a la totalidad connsumida de la fuente hidrica producida en el pais Colombiano con respecto al año 2021";
+    const res="Tu consumo mensual promedio fue de "+valor+"kwh. Siendo equivalente al "+ porcentaje+"% del consumo eolico total correspondiente al año 2020 en Colombia";
 
     if(valor != ""){
         Swal.fire({
