@@ -47,13 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const nuevaNoticia = document.createElement("article");
 
     nuevaNoticia.innerHTML = `
-        <h2>Nueva Aplicación Recomendada</h2>
-        <p>Hemos probado una nueva app que optimiza el rendimiento del sistema y mejora la seguridad.</p>
-        <ul>
-            <li>Interfaz sencilla</li>
-            <li>Mayor velocidad</li>
-            <li>Protección mejorada</li>
-        </ul>
+        <h2>Un buque que vuelve a aprovechar el viento</h2>
+        <br>
+        <img id="noticia" src="img/Neol3.png" alt="noticia" width="300" height="200">
+        <p>Ecopetrol contrató buque con sistema de propulsión eólica para transporte de nafta</p>
+        <p>Ecopetrol anunció la contratación de una embarcación con un sistema auxiliar de propulsión eólica, que le permite a la compañía reducir las emisiones de dióxido de carbono en 49% frente a los buques tradicionales. La primera operación de esta embarcación se dio con el transporte de 300.000 barriles de nafta entre la Refinería de Cartagena y la Terminal Marítima Pozos Colorados.</p>
+        <p>La petrolera explicó que el buque está compuesto por tres velas de succión "que aprovechan la fuerza del viento para generar impulso adicional, y reduce el consumo de combustible y mejorando el desempeño energético del trayecto".</p>
+        <p>Para mas información, puedes consultar el articulo completo a continuación:</p>
+        <p><a id="clip" href="https://www.larepublica.co/economia/ecopetrol-contrato-buque-con-sistema-de-propulsion-eolica-para-transporte-de-naftaec-4276891" target="_blank">Artículo completo</a></p>
     `;
 
     seccionNoticias.appendChild(nuevaNoticia);

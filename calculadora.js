@@ -8,10 +8,10 @@ function resultado(){
 
     if(valor != ""){
         Swal.fire({
-            title: 'excelente',
+            title: 'Resultado',
             text: res,
             icon: 'success',
-            confirmButtonText: 'Cool'
+            confirmButtonText: 'Entendido'
         })
         limpia()
     }else{
