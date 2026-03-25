@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
             labels: ["2012", "2013", "2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"],
             datasets: [{
                 label: "Consumo (TW)",
-                data: [548547, 57624, 702303, 68377, 50887, 30714, 4344, 6332, 1012, 59852],
+                data: [0.0548, 0.0576, 0.0702, 0.0683, 0.0508, 0.0030, 0.0434, 0.0633, 0.0101, 0.0598],
                 borderWidth: 3,
                 tension: 0.4,
                 fill: false
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             labels: ["Eólica", "Solar", "Hidráulica", "Otros" ],
             datasets: [{
                 label: "Producción energética",
-                data: [59852246, 31732163, 59858196, 28208168],
+                data: [0.0598, 0.3173, 59.8581, 2.8208],
                 borderWidth: 1
             }]
         },
